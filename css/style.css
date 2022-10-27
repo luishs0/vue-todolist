@@ -70,11 +70,12 @@ span {
     color: rgba(255, 255, 255, .6);
 }
 
-.text1, .text2 {
+.title-key{
     cursor: pointer;
 }
 
 .d-none{
     display: none;
 }
+
 

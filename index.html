@@ -42,10 +42,9 @@
                     <ul>
                         <li v-for="(task, index) in tasks">
                             <div class="d-flex flex-wrap justify-content-between">
-                                <span class="text2" @click="isDone(index)" v-if="tasks[index].done ===  true" v-if="tasks[index].deleted === false">{{ task.title }}</span>
-                                <span class="text1" v-else @click="isDone(index)" v-if="tasks[index].deleted === false">{{ task.title }}</span>
-                                <span @click="delete(index)" v-if="tasks[index].deleted === false" ><i class="fa-sharp fa-solid fa-xmark cross"></i></span>
-                                <span class="line" v-if="tasks[index].deleted === false"><hr></span>  
+                                <span class="title-key" @click="isDone(index)" :class="task.done ? 'text2' : ''">{{ task.title }}</span>
+                                <span @click="delete(index)"><i class="fa-sharp fa-solid fa-xmark cross"></i></span>
+                                <span class="line"><hr></span>  
                             </div>
                         </li>
                     </ul>
