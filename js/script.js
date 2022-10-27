@@ -9,10 +9,12 @@ createApp({
                 {
                     title: "task 1",
                     done: false,
+                    deleted: false,
                 },
                 {
                     title: "task 2",
                     done: false,
+                    deleted: false,
                 }
             ]
         }
@@ -26,7 +28,11 @@ createApp({
             } else if (this.tasks[index].done === true) {
                 this.tasks[index].done = false;
             }
-       }
+       },
+
+       delete(index) {
+            this.tasks[index].deleted = true;
+       },
     }
 
 }).mount('#app');
