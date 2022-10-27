@@ -13,6 +13,10 @@ createApp({
                 {
                     title: "task 2",
                     done: false,
+                },
+                {
+                    title: "task 3",
+                    done: false,
                 }
             ]
         }
@@ -28,8 +32,8 @@ createApp({
             }
        },
 
-       delete(index) {
-        this.tasks.splice(index, 1)
+       deleteTask(index) {
+            this.tasks.splice(index, 1)
        },
     }
 
