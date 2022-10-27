@@ -29,8 +29,8 @@
                     </div>
                     <div class="ms_header-right">
                         <label for="input-task">New Task</label>
-                        <input type="text" id="input-task" placeholder="Interisci nuova tarea" class="mb-1 ms-1 me-1">
-                        <button>Add</button>
+                        <input type="text" id="input-task" placeholder="Interisci nuova tarea" class="mb-1 ms-1 me-1" v-model="newTask">
+                        <button @click="addNewTask">Add</button>
                     </div>
                 </div>
             </div>
