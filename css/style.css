@@ -52,10 +52,25 @@ li {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
-
-
+ 
+.cross, .check {
+    cursor: pointer;
+}
 
 .line {
     width: 100%;
+}
+
+span {
+    display: block;
+}
+
+.text2 {
+    text-decoration: line-through;
+    color: rgba(255, 255, 255, .6);
+}
+
+.text1, .text2 {
+    cursor: pointer;
 }
 
